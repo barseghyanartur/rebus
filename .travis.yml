@@ -1,0 +1,26 @@
+language: python
+
+# Python versions
+python:
+  - "2.6"
+  - "2.7"
+  - "3.3"
+
+# Environments
+env:
+  - SIX110=true
+  - SIX141=true
+
+# Command to install dependencies
+install:
+  - pip install -r example/requirements.txt
+  - python setup.py install
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.6' && $SIX110 == true ]]; then pip install six==1.1.0; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.6' && $SIX141 == true ]]; then pip install six==1.4.1; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' && $SIX110 == true ]]; then pip install six==1.1.0; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.7' && $SIX141 == true ]]; then pip install six==1.4.1; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.3' && $SIX110 == true ]]; then pip install six==1.1.0; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.3' && $SIX141 == true ]]; then pip install six==1.4.1; fi
+# Command to run tests
+script: 
+  - python src/rebus/tests.py

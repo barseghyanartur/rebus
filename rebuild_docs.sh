@@ -1,0 +1,1 @@
+sphinx-apidoc src/rebus --full -o docs -H 'rebus' -A 'Artur Barseghyan <artur.barseghyan@gmail.com>' -V '0.1' -f -d 20
