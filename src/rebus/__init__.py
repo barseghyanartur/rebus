@@ -104,7 +104,7 @@ def decode(decoder, text, return_object=False):
     decoded_text = decoder(text.decode()).decode().replace(DEFAULT_SUFFIX, '')
 
     if return_object:
-        return DecodedText(text=changed_text, decoded=decoded_text)
+        return DecodedText(text=text, decoded=decoded_text)
     return decoded_text
 
 def b32decode(text, return_object=False):
@@ -140,5 +140,5 @@ def urlsafe_b64decode(text, return_object=False):
     decoded_text = decoded_text.replace(DEFAULT_SUFFIX, '')
 
     if return_object:
-        return DecodedText(text=changed_text, decoded=decoded_text)
+        return DecodedText(text=text, decoded=decoded_text)
     return decoded_text
