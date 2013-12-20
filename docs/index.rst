@@ -1,7 +1,7 @@
 ===============================================
 rebus
 ===============================================
-Generate base-encoded strings consisting of alphanumeric symbols only.
+Generate base64-encoded strings consisting of alphanumeric symbols only.
 
 Why did I make this app?
 ===============================================

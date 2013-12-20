@@ -24,7 +24,7 @@ except:
 setup(
     name = 'rebus',
     version = version,
-    description = ("rebus - Generate random base-encoded strings consisting of alphanumeric symbols only."),
+    description = ("rebus - Generate base64-encoded strings consisting of alphanumeric symbols only."),
     long_description = readme,
     classifiers = [
         "Programming Language :: Python :: 2.6",
