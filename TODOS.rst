@@ -8,7 +8,8 @@ Based on the MoSCoW principle. Must haves and should haves are planned to be wor
 
 Must haves
 ===============================================
-
+- Make it possible to get the original string after decoding (add decode functions).
+- Make the appending symbol (\\n at the moment) adjustable.
 
 Should haves
 ===============================================
