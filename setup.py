@@ -10,7 +10,7 @@ except:
 version = '0.1'
 
 install_requires = [
-    #'six==1.4.1',
+    'six>=1.1.0',
 ]
 
 try:
