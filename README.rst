@@ -13,7 +13,7 @@ devices could perfectly scan all bar-code image that I would generate, Apple dev
 would raise errors on bar code images which were generated using strings that contain
 one or more "=" characters.
 
-The solution found was to add a number of \n at the end of the string to be encoded.
+The solution found was to add a number of \\n at the end of the string to be encoded.
 
 If you happen to experience similar problems, you know what to do.
 
