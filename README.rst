@@ -38,10 +38,12 @@ Install latest stable version from PyPI:
 
 Usage and examples
 ===============================================
-Using `rebus` is damn easy. Whenever you would want to use base64.b32encode or base64.b64encode,
-replace base64 with rebus.
+Using `rebus` is damn easy. Whenever you would want to use ``base64.b32encode``
+or ``base64.b64encode``, replace `base64` with `rebus`.
 
-Required imports.
+Encoding
+-----------------------------------------------
+Required imports
 
 >>> import rebus
 
@@ -59,6 +61,29 @@ urlsafe_b64encode
 
 >>> rebus.urlsafe_b64encode('abcdefg')
 'YWJjZGVmZwoK'
+
+Decoding
+-----------------------------------------------
+It's possible to decode string, encoded with `rebus` to their original values.
+
+Required imports
+
+>>> import rebus
+
+b32decode string
+
+>>> rebus.b32decode('MFRGGZDFMZTQUCQK')
+'abcdefg'
+
+b64decode string
+
+>>> rebus.b64decode('YWJjZGVmZwoK')
+'abcdefg'
+
+urlsafe_b64encode
+
+>>> rebus.urlsafe_b64decode('YWJjZGVmZwoK')
+'abcdefg'
 
 License
 ===============================================

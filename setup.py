@@ -7,7 +7,7 @@ try:
 except:
     readme = ''
 
-version = '0.1'
+version = '0.2'
 
 install_requires = [
     'six>=1.1.0',
@@ -40,7 +40,7 @@ setup(
         "Topic :: Text Processing",
         "Development Status :: 4 - Beta",
     ],
-    keywords = 'b32encode, b64encode',
+    keywords = 'b32encode, b64encode, b32decode, b64decode',
     author = 'Artur Barseghyan',
     author_email = 'artur.barseghyan@gmail.com',
     url = 'https://github.com/barseghyanartur/rebus/',
