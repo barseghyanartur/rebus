@@ -34,7 +34,6 @@ setup(
         "Environment :: Web Environment",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
-        "Framework :: Django",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Topic :: Text Processing",
