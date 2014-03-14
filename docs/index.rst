@@ -5,9 +5,8 @@ Generate base64-encoded strings consisting of alphanumeric symbols only.
 
 Why did I make this app?
 ===============================================
-Recently I have been working on implementing of a Google Authenticator app 
-(https://pypi.python.org/pypi/collective.googleauthenticator) for Plone (which I 
-did for my beloved company - Goldmund, Wyldebeast & Wunderliebe).
+Recently I have been working on implementing of a `Google Authenticator <https://pypi.python.org/pypi/collective.googleauthenticator>`_ app for Plone (which I 
+did for my beloved company - `Goldmund, Wyldebeast & Wunderliebe <http://www.goldmund-wyldebeast-wunderliebe.nl>`_).
 
 For generating of a bar code image, I needed a base32 encoded string. While Android
 devices could perfectly scan all bar-code image that I would generate, Apple devices
